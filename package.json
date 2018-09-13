@@ -8,10 +8,19 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc && tsc --module commonjs --outDir dist/lib && rollup -c rollup.config.ts",
-    "start": "tsc -w & tsc --module commonjs --outDir dist/lib -w & rollup -c rollup.config.ts -w"
+    "start": "tsc -w & tsc --module commonjs --outDir dist/lib -w & rollup -c rollup.config.ts -w",
+    "start-react": "react-scripts-ts start",
+    "build-react": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
-    "@types/node": "^9.4.0",
+    "@types/node": "^10.9.3",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts-ts": "2.17.0",
     "rollup": "^0.57.0",
     "rollup-plugin-commonjs": "^9.0.0",
     "rollup-plugin-node-resolve": "^3.0.0",
@@ -20,6 +29,9 @@
     "tslint": "^5.4.3",
     "tslint-config-prettier": "^1.1.0",
     "tslint-config-standard": "^7.0.0",
-    "typescript": "^2.3.4"
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "depints": "^0.0.1"
   }
 }
