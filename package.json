@@ -8,11 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "tsc -w & tsc --module commonjs -w & rollup -c rollup.config.ts -w",
-    "start-react": "react-scripts-ts start",
-    "build-react": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "start": "tsc -w"
   },
   "devDependencies": {
     "@types/node": "^10.9.3",
