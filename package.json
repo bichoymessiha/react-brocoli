@@ -1,8 +1,9 @@
 {
   "name": "react-depints",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Official React bindings for Depints",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "repository": "https://github.com/bichoymessiha/react-depints.git",
   "author": "bichoymessiha <bichoy.messiha@indigen.com>",
   "license": "MIT",
@@ -11,10 +12,10 @@
     "start": "tsc -w"
   },
   "devDependencies": {
+    "@types/hoist-non-react-statics": "^3.0.1",
     "@types/node": "^10.9.3",
     "@types/react": "^16.4.13",
     "@types/react-dom": "^16.0.7",
-    "@types/hoist-non-react-statics": "^3.0.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts-ts": "2.17.0",
