@@ -1,11 +1,10 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "outDir": "build/dist",
+        "outDir": "./dist",
+        "rootDir": "./src",
         "lib": ["es2015", "es2016", "es2017", "dom"],
         "module": "es2015",
-        "rootDir": "src",
-        "allowJs": true,
         "allowSyntheticDefaultImports": true,
         "declaration": true,
         "declarationDir": "dist/types",
@@ -27,5 +26,5 @@
         "target": "es6",
         "typeRoots": ["typings", "node_modules/@types"]
     },
-    "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"]
+    "exclude": ["node_modules", "build", "examples", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"]
 }

@@ -6,7 +6,8 @@
  * Author(s):
  *   - Bichoy Messiha <bichoy.messiha@indigen.com>
  */
+import { Injector } from "depints";
 
-export { connectInjector } from "./lib/connect/connectInjector";
-export { InjectorProvider } from "./lib/components/InjectorProvider";
-export { InjectionContextProps } from "./lib/types/InjectionContextProps";
+export interface InjectionContextProps {
+    injector?: Injector;
+}

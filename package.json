@@ -1,14 +1,14 @@
 {
-  "name": "react-brocoli",
-  "version": "1.0.0",
-  "description": "Official React bindings for Brocoli",
+  "name": "react-depints",
+  "version": "0.0.1",
+  "description": "Official React bindings for Depints",
   "main": "src/index.ts",
-  "repository": "https://github.com/bichoymessiha/react-brocoli.git",
+  "repository": "https://github.com/bichoymessiha/react-depints.git",
   "author": "bichoymessiha <bichoy.messiha@indigen.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc && tsc --module commonjs --outDir dist/lib && rollup -c rollup.config.ts",
-    "start": "tsc -w & tsc --module commonjs --outDir dist/lib -w & rollup -c rollup.config.ts -w",
+    "build": "tsc",
+    "start": "tsc -w & tsc --module commonjs -w & rollup -c rollup.config.ts -w",
     "start-react": "react-scripts-ts start",
     "build-react": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
@@ -18,6 +18,7 @@
     "@types/node": "^10.9.3",
     "@types/react": "^16.4.13",
     "@types/react-dom": "^16.0.7",
+    "@types/hoist-non-react-statics": "^3.0.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts-ts": "2.17.0",
@@ -32,6 +33,7 @@
     "typescript": "^3.0.3"
   },
   "dependencies": {
-    "depints": "^0.0.1"
+    "depints": "^0.0.1",
+    "hoist-non-react-statics": "^3.0.1"
   }
 }

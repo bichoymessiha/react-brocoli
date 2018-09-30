@@ -6,7 +6,13 @@
  * Author(s):
  *   - Bichoy Messiha <bichoy.messiha@indigen.com>
  */
+import { Module } from "depints";
 
-export { connectInjector } from "./lib/connect/connectInjector";
-export { InjectorProvider } from "./lib/components/InjectorProvider";
-export { InjectionContextProps } from "./lib/types/InjectionContextProps";
+import { Logger } from "./Logger";
+
+@Module("app")
+export class AppModule {
+    constructor(logger: Logger) {
+        logger.log("AppModule", "constructor");
+    }
+}
