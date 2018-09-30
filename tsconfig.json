@@ -26,5 +26,5 @@
         "target": "es6",
         "typeRoots": ["typings", "node_modules/@types"]
     },
-    "exclude": ["node_modules", "build", "examples", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"]
+    "exclude": ["node_modules", "build", "src/examples", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"]
 }
