@@ -1,6 +1,6 @@
 {
   "name": "react-depints",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Official React bindings for Depints",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
